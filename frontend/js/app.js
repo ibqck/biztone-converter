@@ -73,11 +73,11 @@ function setLoading(isLoading) {
     if (isLoading) {
         loadingOverlay.classList.remove('hidden');
         convertBtn.disabled = true;
-        convertBtn.innerText = '변환 중...';
+        convertBtn.classList.add('opacity-50');
     } else {
         loadingOverlay.classList.add('hidden');
         convertBtn.disabled = false;
-        convertBtn.innerText = '변환하기';
+        convertBtn.classList.remove('opacity-50');
     }
 }
 
